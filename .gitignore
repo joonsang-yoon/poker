@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+artifacts/validation/*.log
+!artifacts/validation/reference-run.log

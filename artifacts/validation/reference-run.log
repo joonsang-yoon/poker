@@ -1,0 +1,29 @@
+R1 INDEPENDENT VALIDATION — ACTUAL EXECUTION
+started_utc=2026-11-16T18:34:43.665200+00:00
+started_Asia_Seoul=2026-11-17T03:34:43.665221+09:00
+python=3.12.14
+optimization=0
+command=["python3", "-u", "selected/validate.py"]
+sha256 EFG.md 0f3bfd197e79ed3d5520c776af320149a8a0d9e36ce201e0a07e7123d3e639c7
+sha256 preflop.json 135ca851c5db7d0db237422b3e6943ad7b9374b9d2130f54e874f590e277216a
+sha256 kernel.py dcb9d3f0f5ed2ac401816606af1643a50a4d7c3ebcfbfa15b6c59125082c20c2
+sha256 validate.py 00f247c46d365a9eac1256a55978a5d1cbc198153da26048dc0397c12dd27ae5
+sha256 validate_betting.py d6161b564825b8c36e4f776f4586ef61b01c401dbd5f2be2cc9b33f9cdca207b
+sha256 validate_cards.py b33adda627886f7401874a9a7208d47e4291786f8b954a401d7497e602ee6699
+scope=oracle-reachable public/control closure; exact-card support and probability checks; all physical five-card evaluations; all rank/flush semantic cases for five through seven cards; full-history information-set and payoff checks
+coverage=finite public-state proof reuse plus exact-card induction; no literal enumeration of all card-labelled complete histories
+PASS independent exact-rounding, strict-snap, minimum-before-snap and action-rejection checks.
+PASS independent exhaustive oracle-reachable betting and control-state traversal.
+PASS complete preflop and recursive postflop menus, minimum raises, river jams and deduplication.
+PASS all reachable stack, wager-level, actual-increment, pot, closure and natural-cap invariants.
+PASS all reachable fold and showdown payoff algebra; all-in responses and chance-only runouts.
+PASS: independent hand-rule fixtures, invalid-card rejection, suit symmetry and card-order invariance.
+PASS: every physical five-card hand matches the independent direct hand ranker.
+PASS: every feasible five/six/seven-card rank-multiplicity and flush-rank semantic class matches independent direct and best-five ranking.
+PASS: complete root private-deal support, uniqueness, exact Fraction mass and normalization.
+PASS: complete conditional board supports on exercised residual decks, invalid outcomes, exact information keys, public-history separation and perfect-recall construction.
+PASS: chance-only all-in runouts, exact suffix probabilities, card-evaluated wins/losses/ties and contribution-based settlement.
+PASS: delivered preflop JSON matches the kernel's full preflop expansion
+PASS: standalone exact-card kernel completes an integrated hand
+finished_utc=2026-11-16T18:37:45.729879+00:00
+RESULT=PASS

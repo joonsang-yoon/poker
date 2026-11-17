@@ -1,0 +1,597 @@
+[
+  {
+    "prefix": [],
+    "actor": "SB",
+    "commitments": [
+      "1/2",
+      "1"
+    ],
+    "level": 1,
+    "delta": "1",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-1/2",
+          "1/2"
+        ]
+      },
+      {
+        "action": "C1",
+        "next_prefix": [
+          "C1"
+        ]
+      },
+      {
+        "action": "R2",
+        "next_prefix": [
+          "R2"
+        ]
+      },
+      {
+        "action": "R3",
+        "next_prefix": [
+          "R3"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "C1"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "1",
+      "1"
+    ],
+    "level": 1,
+    "delta": "1",
+    "edges": [
+      {
+        "action": "X",
+        "next_mode": "deal",
+        "C": "1",
+        "pot": "2",
+        "next_street": "flop"
+      },
+      {
+        "action": "R4",
+        "next_prefix": [
+          "C1",
+          "R4"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "C1",
+      "R4"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "1",
+      "4"
+    ],
+    "level": 2,
+    "delta": "3",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-1",
+          "1"
+        ]
+      },
+      {
+        "action": "C4",
+        "next_mode": "deal",
+        "C": "4",
+        "pot": "8",
+        "next_street": "flop"
+      },
+      {
+        "action": "R12",
+        "next_prefix": [
+          "C1",
+          "R4",
+          "R12"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "C1",
+      "R4",
+      "R12"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "12",
+      "4"
+    ],
+    "level": 3,
+    "delta": "8",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "4",
+          "-4"
+        ]
+      },
+      {
+        "action": "C12",
+        "next_mode": "deal",
+        "C": "12",
+        "pot": "24",
+        "next_street": "flop"
+      },
+      {
+        "action": "R28",
+        "next_prefix": [
+          "C1",
+          "R4",
+          "R12",
+          "R28"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "C1",
+      "R4",
+      "R12",
+      "R28"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "12",
+      "28"
+    ],
+    "level": 4,
+    "delta": "16",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-12",
+          "12"
+        ]
+      },
+      {
+        "action": "C28",
+        "next_mode": "deal",
+        "C": "28",
+        "pot": "56",
+        "next_street": "flop"
+      },
+      {
+        "action": "R100",
+        "next_prefix": [
+          "C1",
+          "R4",
+          "R12",
+          "R28",
+          "R100"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "C1",
+      "R4",
+      "R12",
+      "R28",
+      "R100"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "100",
+      "28"
+    ],
+    "level": 5,
+    "delta": "72",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "28",
+          "-28"
+        ]
+      },
+      {
+        "action": "C100",
+        "next_mode": "runout",
+        "C": "100",
+        "pot": "200",
+        "next_street": "flop"
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R2"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "2",
+      "1"
+    ],
+    "level": 2,
+    "delta": "1",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "1",
+          "-1"
+        ]
+      },
+      {
+        "action": "C2",
+        "next_mode": "deal",
+        "C": "2",
+        "pot": "4",
+        "next_street": "flop"
+      },
+      {
+        "action": "R8",
+        "next_prefix": [
+          "R2",
+          "R8"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R2",
+      "R8"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "2",
+      "8"
+    ],
+    "level": 3,
+    "delta": "6",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-2",
+          "2"
+        ]
+      },
+      {
+        "action": "C8",
+        "next_mode": "deal",
+        "C": "8",
+        "pot": "16",
+        "next_street": "flop"
+      },
+      {
+        "action": "R22",
+        "next_prefix": [
+          "R2",
+          "R8",
+          "R22"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R2",
+      "R8",
+      "R22"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "22",
+      "8"
+    ],
+    "level": 4,
+    "delta": "14",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "8",
+          "-8"
+        ]
+      },
+      {
+        "action": "C22",
+        "next_mode": "deal",
+        "C": "22",
+        "pot": "44",
+        "next_street": "flop"
+      },
+      {
+        "action": "R36",
+        "next_prefix": [
+          "R2",
+          "R8",
+          "R22",
+          "R36"
+        ]
+      },
+      {
+        "action": "R100",
+        "next_prefix": [
+          "R2",
+          "R8",
+          "R22",
+          "R100"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R2",
+      "R8",
+      "R22",
+      "R36"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "22",
+      "36"
+    ],
+    "level": 5,
+    "delta": "14",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-22",
+          "22"
+        ]
+      },
+      {
+        "action": "C36",
+        "next_mode": "deal",
+        "C": "36",
+        "pot": "72",
+        "next_street": "flop"
+      },
+      {
+        "action": "R100",
+        "next_prefix": [
+          "R2",
+          "R8",
+          "R22",
+          "R36",
+          "R100"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R2",
+      "R8",
+      "R22",
+      "R36",
+      "R100"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "100",
+      "36"
+    ],
+    "level": 6,
+    "delta": "64",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "36",
+          "-36"
+        ]
+      },
+      {
+        "action": "C100",
+        "next_mode": "runout",
+        "C": "100",
+        "pot": "200",
+        "next_street": "flop"
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R2",
+      "R8",
+      "R22",
+      "R100"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "22",
+      "100"
+    ],
+    "level": 5,
+    "delta": "78",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-22",
+          "22"
+        ]
+      },
+      {
+        "action": "C100",
+        "next_mode": "runout",
+        "C": "100",
+        "pot": "200",
+        "next_street": "flop"
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R3"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "3",
+      "1"
+    ],
+    "level": 2,
+    "delta": "2",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "1",
+          "-1"
+        ]
+      },
+      {
+        "action": "C3",
+        "next_mode": "deal",
+        "C": "3",
+        "pot": "6",
+        "next_street": "flop"
+      },
+      {
+        "action": "R11",
+        "next_prefix": [
+          "R3",
+          "R11"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R3",
+      "R11"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "3",
+      "11"
+    ],
+    "level": 3,
+    "delta": "8",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-3",
+          "3"
+        ]
+      },
+      {
+        "action": "C11",
+        "next_mode": "deal",
+        "C": "11",
+        "pot": "22",
+        "next_street": "flop"
+      },
+      {
+        "action": "R28",
+        "next_prefix": [
+          "R3",
+          "R11",
+          "R28"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R3",
+      "R11",
+      "R28"
+    ],
+    "actor": "BB",
+    "commitments": [
+      "28",
+      "11"
+    ],
+    "level": 4,
+    "delta": "17",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "11",
+          "-11"
+        ]
+      },
+      {
+        "action": "C28",
+        "next_mode": "deal",
+        "C": "28",
+        "pot": "56",
+        "next_street": "flop"
+      },
+      {
+        "action": "R100",
+        "next_prefix": [
+          "R3",
+          "R11",
+          "R28",
+          "R100"
+        ]
+      }
+    ]
+  },
+  {
+    "prefix": [
+      "R3",
+      "R11",
+      "R28",
+      "R100"
+    ],
+    "actor": "SB",
+    "commitments": [
+      "28",
+      "100"
+    ],
+    "level": 5,
+    "delta": "72",
+    "edges": [
+      {
+        "action": "F",
+        "terminal": "fold",
+        "payoff_SB_BB": [
+          "-28",
+          "28"
+        ]
+      },
+      {
+        "action": "C100",
+        "next_mode": "runout",
+        "C": "100",
+        "pot": "200",
+        "next_street": "flop"
+      }
+    ]
+  }
+]
